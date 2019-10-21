@@ -1,0 +1,94 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito',Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+nav{
+    margin: auto;
+    flex: 1;
+}
+.navLinks{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navLink{
+    text-decoration: none;
+    font-size: 18px;
+    z-index: -1;
+    cursor: pointer;
+    color: #6c6b81;
+}
+
+.principal{
+    display: flex;
+	width: 80%;
+	margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.fondo img{
+    position: absolute;
+    top: 0px;
+    transform: translateX(-200px) translateY(-200px);
+    opacity: 0.75;
+}
+.imagenLenga{
+    background: chartreuse;
+}
+.imagenLenga img{
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.50;
+}
+.imagenTexto{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+.imagenTexto img{
+    height: 100%;
+}
+.imagenMochila{
+    
+    flex: 1;
+    display: flex;
+	justify-content: center;
+	height: 60vh;
+       
+}
+.imagenMochila img{
+    height: 110%;
+    animation: drop 1.5s;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
