@@ -10,6 +10,7 @@
 </head>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
+    var i =0;
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -24,13 +25,23 @@
     Tawk_API = Tawk_API || {};
 Tawk_API.onChatStarted = function(){
     console.log("Llegue a chat started");
+    i ++;
     //place your code here
 };
+
+Tawk_API.onLoad = function(){
+    Tawk_API.setAttributes({
+        'id'    : 'A1234',
+        'store' : 'Midvalley'
+    }, function(error){});
+};
+    document.getElementById("ejemplo").innerHTML= <h2>i</h2>;
     </script>
     <!--End of Tawk.to Script-->
 <body>
     <header>
         <nav>
+            <div id="ejemplo"> </div>
             <ul class="navLinks">
                 <li><a href="#" class="navLink">Fernando</a></li>
                 <li><a href="#" class="navLink">fweknmifkew</a></li>
