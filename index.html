@@ -52,6 +52,7 @@
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var i =0;
+    var ciudad;
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -62,14 +63,14 @@
     s0.parentNode.insertBefore(s1,s0);
     console.log("Gonzalo puto");
     })();
-
-    Tawk_API = Tawk_API || {};
+    ciudad = Tawk_API.visitor.ciudad;
 Tawk_API.onChatStarted = function(){
     console.log("Llegue a chat started");
     i = i +1;
-    document.getElementById("ejemplo").innerHTML= "Numero de chats entrantes = "+i;
+    document.getElementById("ejemplo").innerHTML= "Numero de chats entrantes = "+i+ "Desde ciudad :"+ ciudad;
     //place your code here
 };
+
 
 Tawk_API.onLoad = function(){
     Tawk_API.setAttributes({
