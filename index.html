@@ -8,40 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
 </head>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var i =0;
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5f90e0a1fd4ff5477ea7e5de/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    console.log("Gonzalo puto");
-    })();
 
-    Tawk_API = Tawk_API || {};
-Tawk_API.onChatStarted = function(){
-    console.log("Llegue a chat started");
-    i ++;
-    //place your code here
-};
-
-Tawk_API.onLoad = function(){
-    Tawk_API.setAttributes({
-        'id'    : 'A1234',
-        'store' : 'Midvalley'
-    }, function(error){});
-};
-    document.getElementById("ejemplo").innerHTML= "Numero de chats entrantes = "+i;
-    </script>
-    <!--End of Tawk.to Script-->
 <body>
     <header>
         <nav>
-            <div ><p id="ejemplo"></p> </div>
+            <div ><p id="ejemplo"></p> juan</div>
             <ul class="navLinks">
                 <li><a href="#" class="navLink">Jorge</a></li>
                 <li><a href="#" class="navLink">juana</a></li>
@@ -78,4 +49,34 @@ Tawk_API.onLoad = function(){
     </main>
 
 </body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var i =0;
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5f90e0a1fd4ff5477ea7e5de/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    console.log("Gonzalo puto");
+    })();
+
+    Tawk_API = Tawk_API || {};
+Tawk_API.onChatStarted = function(){
+    console.log("Llegue a chat started");
+    i ++;
+    //place your code here
+};
+
+Tawk_API.onLoad = function(){
+    Tawk_API.setAttributes({
+        'id'    : 'A1234',
+        'store' : 'Midvalley'
+    }, function(error){});
+};
+    document.getElementById("ejemplo").innerHTML= "Numero de chats entrantes = "+i;
+    </script>
+    <!--End of Tawk.to Script-->
 </html>
