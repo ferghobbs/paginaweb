@@ -15,4 +15,6 @@ self.addEventListener('push', function(event) {
   
     console.log(duracion)
 
-})
+});
+
+console.log("Se agrego script ")
